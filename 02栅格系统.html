@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <style>
+    [class^="col"] {
+      border: 1px solid blueviolet;
+      height: 60px;
+      background-color: brown;
+
+    }
+
+    .cardItem {
+      background-color: brown;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-4">
+        <div class="cardItem">1</div>
+      </div>
+      <div class="col-lg-3 col-sm-4">2</div>
+      <div class="col-lg-3 col-sm-4">3</div>
+      <!-- 列嵌套,加一个row，可以消除父盒子的padding，高度也会等于父盒子 -->
+      <div class="col-lg-3 col-sm-4">
+        <div class="row">
+          <div class="col-lg-6">44</div>
+          <div class="col-lg-6">44</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- 列偏移 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-1">a</div>
+      <div class="col-lg-4 col-lg-offset-2">b</div>
+    </div>
+  </div>
+  <!-- 列排序 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-lg-push-2">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+      <div class="col-lg-6 ">b</div>
+    </div>
+  </div>
+  <!-- 响应式工具 -->
+  <div class="container">
+    <div class="row">
+      <!-- 中等屏幕下隐藏 -->
+      <div class="col-lg-4 hidden-sm hidden-md">1</div>
+      <div class="col-lg-4">2</div>
+      <div class="col-lg-4">3</div>
+    </div>
+  </div>
+</body>
+
+</html>

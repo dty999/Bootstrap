@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阿里百秀</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* 屏幕尺寸大于1280px时： */
+    @media screen and (min-width:1280px) {
+      .container {
+        width: 1280px;
+      }
+    }
+
+    .logo img {
+      /* 让图片跟随父盒子缩放 */
+      width: 100%;
+
+    }
+
+    /*  */
+    .header {
+      padding-left: 0px;
+    }
+
+    .nav {
+      background-color: #eee;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav a {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 30px;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      color: #333;
+      background-color: white;
+    }
+
+    /* 微调图标位置 */
+    .nav a span::before {
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 设计图是1280px，而bootstrap在lg屏下默认container宽度是1170px，所以添加媒体查询，当屏幕尺寸大于1280px时设置container宽度1280px -->
+  <div class="container">
+    <!-- 加个row可以消除padding -->
+    <div class="row">
+      <div class="col-md-2 header">
+        <div class="logo">
+          <a href="#"><img src="imgs/6.jpg"></a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#"> <span class="glyphicon glyphicon-camera"></span> 生活馆</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-apple"></span> 自然会</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-camera"></span> 生活馆</a>
+            </li>
+            <li><a href="#"> <span class="glyphicon glyphicon-camera"></span> 生活馆</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-camera"></span>
+                生活馆</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7">2</div>
+      <div class="col-md-3">3</div>
+    </div>
+  </div>
+</body>
+
+</html>
