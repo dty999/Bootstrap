@@ -39,3 +39,15 @@
   - 列偏移:col-lg-offset-*
   - 列排序：col-lg-push-* & col-lg-pull-*
   - 响应式工具：hidden-sm hidden-md...visible-sm
+  
+## 实现响应式
+  1. 把需要响应式的html写两份，其中一份添加class hidden-* ，另一份添加visible-*
+  2. 媒体查询 
+   ~~~css
+   @media screen and (max-width:991px){
+     <!-- 表示不大于992px的屏幕下 -->
+     .selector{
+       ...
+     }
+   }
+   ~~~
