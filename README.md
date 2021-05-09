@@ -38,4 +38,4 @@
   - 列嵌套:加一个row，可以消除父盒子的padding，高度也会等于父盒子、也可以直接写
   - 列偏移:col-lg-offset-*
   - 列排序：col-lg-push-* & col-lg-pull-*
-  - 响应式工具：hidden-sm hidden-md...
+  - 响应式工具：hidden-sm hidden-md...visible-sm
